@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Hylia serif;
+    src: url(./HyliaSerifBeta-Regular.otf);
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    width: 130px;
+    height: auto;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    color: #49d6a1;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: Hylia serif;
+    transition: .5s;
+}
+
+li:hover {
+    color: #fbf7dc;
+}
+
+.coment-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.coment-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.coment {
+    width: 65%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 25px;
+    font-family: Hylia Serif;
+    text-shadow: 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black, -2px -2px 1px black;
+}
+
+.coment1 {
+    background-image: url(./Fundocoments.jpg);
+}
+
+.coment2 {
+    background-image: url(./Fundocoments.jpg);
+}
+
+.coment3 {
+    background-image: url(./Fundocoments.jpg);
+}
+
+.coment4 {
+    background-image: url(./Fundocoments.jpg);
+}
+
+.coment5 {
+    background-image: url(./Fundocoments.jpg);
+}
+
+.coment6 {
+    background-image: url(./Fundocoments.jpg);
+}
+
+.coment:hover {
+    transform: scale(1.02);
+}
+
+#comentario {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+    font-size: 19px;
+    font-family: 'Comic Neue', cursive;
+    background: none;
+    text-shadow: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fbf7dc;
+    font-size: 20px;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .coment {
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+      }
+
+    .coment-content {
+        grid-template-columns: 1fr;
+    }
+}

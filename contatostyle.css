@@ -1,0 +1,137 @@
+@font-face {
+    font-family: Hylia serif;
+    src: url(./HyliaSerifBeta-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    width: 130px;
+    height: auto;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    color: #49D6A1;
+    cursor: pointer;
+    font-size: 19px;
+    /* transition: .5s; */
+    font-family: Hylia Serif;
+}
+
+li:hover {
+    color: #FBF7DC;
+    transition: .5s;
+}
+
+#divform {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #fff;
+}
+
+#formulario {
+    display: block;
+    align-items: left;
+    width: 250px;
+    color: #FBF7DC;
+    font-size: 20px;
+}
+
+input {
+    display: flex;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.button {
+    display: flex;
+    width: 50%;
+    height: 35px;
+    padding: 4px 5px;
+    color: #fff;
+    margin-left: 60px;
+    background-color: #49D6A1;
+    font-size: 20px;
+    justify-content: center;
+    font-family: Hylia serif;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* transition: 0.8s; */
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #49D6A1;
+    transition: 0.8s;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #FBF7DC;
+    font-size: 20px;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    
+}

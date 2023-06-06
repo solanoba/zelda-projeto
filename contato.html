@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda ToTK Contato</title>
+    <link rel="stylesheet" href="./contatostyle.css" />
+</head>
+<body>
+    <header>
+        <img id="logo" src="./Logo.jpg" />
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+        <div id="divform">
+            <form id=formulario action="./contato.html">
+                    <Label for="nome">Nome: </Label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" />
+
+                    <label for="endereco">Endereço: </label>
+                    <input type="text" id="endereco" name="endereco" />
+
+                    <label for="n">Nº: </label>
+                    <input type="number" id="n" name="numero" />
+
+                    <label for="cidade">Cidade: </label>
+                    <input type="text" id="cidade" name="cidade" />
+
+                    <label for="cep">CEP.: </label>
+                    <input type="number" id="cep" name="cep" />
+
+                    <label for="maior">Você tem 18 anos?<br>Sim</label>
+                    <input style="display: block;" type="radio" id="maior" name="maior" value="sim" />
+                
+                    <label for="maior">Não</label>
+                    <input style="display: block;"type="radio" id="maior" name="maior" value="nao" />
+
+                    <label for="promocoes">Deseja receber nossas promoções? </label>
+                    <input style="display: block;"type="checkbox" id="promocoes" name="promo" />
+
+                    <label for="recomenda">Qual a probabilidade de recomendar Zelda? </label>
+                    <input type="range" id="recomenda" name="recomenda" />
+
+                    <labe for="obs">Observações:</labe>
+                    <textarea name="obs" id="obs" rows="12"></textarea>
+
+                    <button class="button">Enviar</button>
+            </form>
+        </div>
+    <footer>
+        <img style="object-fit: cover;" id="logo" src="./Logo.jpg" />
+        <span>Todos os direitos reservados &copy;</span>
+        <span>Desenvolvido por Solano Baumgartner</span>
+        <nav class="footer-navigation">
+            <ul class="footer-list">
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

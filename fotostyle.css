@@ -1,0 +1,170 @@
+@font-face {
+    font-family: Hylia Serif;
+    src: url(./HyliaSerifBeta-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    width: 130px;
+    height: auto;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    color: #49D6A1;
+    cursor: pointer;
+    font-size: 19px;
+    font-family: Hylia serif;
+    transition: .5s;
+}
+
+li:hover {
+    color: #FBF7DC;
+}
+
+.foto-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.foto-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.foto {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #FBF7DC;
+    font-size: 22px;
+    font-family: Hylia serif;
+    text-shadow: 2px 2px 1px black, -2px 2px 1px black, 2px -2px 1px black, -2px -2px 1px black;
+}
+
+.foto1 {
+    background-image: url(https://upload.wikimedia.org/wikipedia/pt/2/25/Zelda_TotK_capa.jpg);
+}
+
+.foto2 {
+    background-image: url(https://cdn.ome.lt/OMFZ2WWe9B7kqNdfu9dTf_I-7Fk=/770x0/smart/uploads/conteudo/fotos/zelda_tears_of_the_kingdom_link_official_artwork.jfif);
+}
+
+.foto3 {
+    background-image: url(https://assetsio.reedpopcdn.com/Wo-beginnt-The-Legend-of-Zelda-Tears-of-the-Kingdom.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp);
+}
+
+.foto4 {
+    background-image: url(https://i.blogs.es/1c6b20/the-legend-of-zelda-hora-mexico/1366_2000.jpeg);
+}
+
+.foto5 {
+    background-image: url(https://hypando.com.br/wp-content/uploads/2023/04/images-10-1.jpeg);
+}
+
+.foto6 {
+    background-image: url(https://t2.tudocdn.net/647833?w=1920&h=1440);
+}
+
+.foto7 {
+    background-image: url(https://pop.proddigital.com.br/wp-content/uploads/sites/8/2023/04/01-47.jpg);
+}
+
+.foto8 {
+    background-image: url(https://i.kym-cdn.com/photos/images/original/002/570/933/da6);
+}
+
+.foto9 {
+    background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2022%2F09%2F13%2FLegend-of-Zelda-Tears-of-the-Kingdom-091322.jpg);
+}
+
+.foto10 {
+    background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/infobae/3WJBEQZ2BVDETEQKQBPRPPLV4Y.png);
+}
+
+.foto11 {
+    background-image: url(https://www.elcolombiano.com/binrepository/565x565/0c0/0d0/none/11101/LJNB/zelda-1_42339807_20230509162839.jpg);
+}
+
+.foto12 {
+    background-image: url(https://gameranx.com/wp-content/uploads/2023/04/The-Legend-of-Zelda-Tears-of-the-Kingdom-Moblins.png);
+}
+
+.foto:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #FBF7DC;
+    font-size: 20px;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .footer-navigation{
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .foto-content {
+        grid-template-columns: 1fr;
+    }
+}
